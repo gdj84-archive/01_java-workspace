@@ -10,5 +10,9 @@ public class SecondClass {
 	public void methodB() {
 		System.out.println("반갑습니다");
 	}
+	
+	public void methodC() {
+		System.out.println("다시만나요");
+	}
 
 }
