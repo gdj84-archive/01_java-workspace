@@ -145,12 +145,51 @@ public class Variable {
 		int nu1m;
 		//int 1num;
 		
+		int num_1;
+		int num$1;
+		int _num1;
+		int $num1;
+		//int num#1;
 		
-		
+		String username; // 권장 x
+		String userName; // 권장 o
+		String 이름;	 // 권장 x
 		
 	}
 	
+	public void constant() {
+		
+		int age = 10;
+		age = 20; // 변수는 값을 변경할 수 있다.
+		
+		/*
+		 * < 상수 > 
+		 * 
+		 * 1. 변수와 동일하게 값을 기록하기 위한 공간
+		 * 2. 단, 한번 담긴 값을 변경할 수 없음
+		 * 3. 상수로 선언되는 이름은 다 대문자로 작성하는걸 권장 
+		 * 
+		 * [표현법] final 자료형 변수명;
+		 */
+		
+		final int AGE = 30;
+		//AGE = 40;
+		
+		System.out.println(AGE);
+		
+		System.out.println(Math.PI); // 대표적인 상수 (Math클래스 안에 정의되어있는 PI 상수)
+		
+	}
 	
+	/*
+	 * ** 정리 ** 
+	 * 
+	 * 1. 값(리터럴) : 프로그램상에 필요한 명시적인 data | 사용자가 마우스 또는 키보드로 입력한 data 
+	 * 2. 변수 : 값을 메모리상에 저장하기 위한 공간 
+	 * 			 한개의 값만 담을 수 있고 새로운 값을 다시 대입할 수 있음 (변경)
+	 * 3. 상수 : 변수 선언 구문 앞에 final 붙여서 선언 
+	 * 			 변수와 비슷하나 한번 담긴 값을 변경할 수 없음
+	 */
 	
 	
 
