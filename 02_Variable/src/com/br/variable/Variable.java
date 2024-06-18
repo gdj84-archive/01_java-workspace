@@ -44,6 +44,8 @@ public class Variable {
 		 * 3. 유지보수에 용이함 
 		 */
 		
+		System.out.println("안녕하세요 여러분");
+		
 		
 	}
 	
