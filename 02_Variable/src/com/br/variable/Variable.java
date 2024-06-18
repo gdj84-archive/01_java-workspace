@@ -44,7 +44,45 @@ public class Variable {
 		 * 3. 유지보수에 용이함 
 		 */
 		
-		System.out.println("안녕하세요 여러분");
+	}
+	
+	public void declareVariable() {
+		
+		/*
+		 * < 변수 선언 및 값 대입 >
+		 * 
+		 * 1. 변수 선언 
+		 *    저장할 값을 기록하기 위한 변수를 메모리 공간에 확보해 놓는 과정
+		 *    
+		 *    [표현법] 자료형 변수명;
+		 *    
+		 * 2. 변수에 값 대입
+		 * 
+		 * 	  [표현법] 변수명 = 값;
+		 * 
+		 * 3. 변수 선언과 동시에 값 대입 (초기화)
+		 * 
+		 * 	  [표현법] 자료형 변수명 = 값;
+		 * 
+		 * - 자료형 : 어떤 값을 담아낼건지, 어떤 크기의 값을 담아낼건지에 따라서 변수의 크기 및 모양을 정하는 부분
+		 * - 변수명 : 변수의 이름을 정하는 부분 (의미부여할 것)
+		 * 
+		 */
+		
+		/*
+		 * < 기본 자료형 (primitive type) >
+		 * 1. 논리형 : boolean(1byte)
+		 * 2. 정수형 : byte(1byte), short(2byte), int(4byte), long(8byte)
+		 * 3. 실수형 : float(4byte), double(8byte)
+		 * 4. 문자형 : char(2byte)
+		 * 
+		 * < 참조 자료형 (reference type) >
+		 * 1. 문자열 : String
+		 * 
+		 */
+		
+		
+		
 		
 		
 	}
