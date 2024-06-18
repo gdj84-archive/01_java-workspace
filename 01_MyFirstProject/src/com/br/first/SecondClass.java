@@ -13,6 +13,11 @@ public class SecondClass {
 	
 	public void methodC() {
 		System.out.println("다시만나요");
+		methodD(); // 같은 클래스내에 존재하는 메소드 호출방법
+	}
+	
+	public void methodD() {
+		System.out.println("어서오세요");
 	}
 
 }
