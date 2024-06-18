@@ -1,6 +1,7 @@
 package com.br.run;
 
 import com.br.first.SecondClass;
+import com.br.first.ThirdClass;
 
 public class RunClass {
 	
@@ -30,9 +31,19 @@ public class RunClass {
 		SecondClass second = new SecondClass();
 		
 		// 메소드 호출
+		/*
 		second.methodA();
 		second.methodB();
 		second.methodC();
+		*/
+		
+		// ----------------------------------------
+		
+		// ThirdClass에 javaValue 메소드 호출
+		ThirdClass third = new ThirdClass();
+		
+		third.javaValue();
+		
 		
 		
 	}
