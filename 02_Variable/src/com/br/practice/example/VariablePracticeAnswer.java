@@ -89,7 +89,7 @@ public class VariablePracticeAnswer {
 	
 	
 	
-	// 추가 문제 
+	// 추가 문제 -----------------------------------------------------------------------
 	public void method5() {
 		
 		/*
@@ -108,16 +108,16 @@ public class VariablePracticeAnswer {
 	
 	public void method6() {
 		/*
-		 * 실수형으로 국어, 영어, 수학 세 과목의 점수를 입력받아 총점과 평균을 출력하시오.
-		 * 단, 총점과 평균은 정수형으로 출력되도록 하시오. 
+		 * 정수형으로 국어, 영어, 수학 세 과목의 점수를 입력받아 총점과 평균을 출력하시오.
+		 * 단, 평균은 실수형으로 출력되도록 하시오. 
 		 * 
 		 * ex) 
-		 * 국어 : 90.0 (=> 사용자가 입력한 값)
-		 * 영어 : 90.0 (=> 사용자가 입력한 값)
-		 * 수학 : 90.0 (=> 사용자가 입력한 값)
+		 * 국어 : 90 (=> 사용자가 입력한 값)
+		 * 영어 : 91 (=> 사용자가 입력한 값)
+		 * 수학 : 85 (=> 사용자가 입력한 값)
 		 * 
-		 * 총점 : 270  (결과 출력)
-		 * 평균 : 90   (결과 출력)
+		 * 총점 : 266  	  (결과 출력)
+		 * 평균 : 88.67   (결과 출력, 반드시 소수점아래 둘째짜리까지 출력되도록)
 		 */
 		
 		
@@ -127,8 +127,9 @@ public class VariablePracticeAnswer {
 		/*
 		 * 아래의 코드에 선언된 5개의 변수를 가지고 
 		 * 산술연산(+,-,*,/)과 형변환을 적절히 활용하여
-		 * 주석에 적힌값과 같은 값이 나올 수 있도록
-		 * 출력문 안의 구문을 수정하시오. (출력문 안에 이미쓰여져있는 변수를 활용할 것)
+		 * 주석에 적힌 값과 같은 값이 나올 수 있도록
+		 * 출력문 안의 구문을 수정하시오. 
+		 * (출력문 안에 이미 쓰여져있는 변수를 활용할 것)
 		 */
 		
 		int iNum1 = 10;
@@ -146,7 +147,6 @@ public class VariablePracticeAnswer {
         System.out.println( iNum1 ); // 10.0
         
         System.out.println( iNum1 iNum2 ); // 2.5
-        System.out.println( dNum ); // 2.5
         
         System.out.println( fNum ); // 3
         System.out.println( iNum1  fNum ); // 3
@@ -154,10 +154,9 @@ public class VariablePracticeAnswer {
         System.out.println( iNum1 fNum );// 3.3333333
         System.out.println( iNum1 fNum ); // 3.333333333333335
         
-        System.out.println( ch ); // 'A'
         System.out.println( ch ); // 65
-        System.out.println( ch   iNum1 ); // 75
-        System.out.println( (ch  iNum1) ); // 'K'
+        System.out.println( ch  iNum1 ); // 75
+        System.out.println( ch  iNum1 ); // 'K'
 
 	}
 }
