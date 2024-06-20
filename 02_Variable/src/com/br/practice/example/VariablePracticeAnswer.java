@@ -112,11 +112,12 @@ public class VariablePracticeAnswer {
 		System.out.print("문자 : ");
 		char ch = sc.nextLine().charAt(0);
 		
-		System.out.println(ch + " 숫자값 : " + (int)ch);
-		
+		//System.out.println(ch + " 숫자값 : " + (int)ch);
+		System.out.printf("%c 숫자값 : %d", ch, (int)ch);
 	}
 	
 	public void method6() {
+		
 		/*
 		 * 정수형으로 국어, 영어, 수학 세 과목의 점수를 입력받아 총점과 평균을 출력하시오.
 		 * 단, 평균은 실수형으로 출력되도록 하시오. 
@@ -140,11 +141,17 @@ public class VariablePracticeAnswer {
 		System.out.print("수학 : ");
 		int math = sc.nextInt();
 		
-		int sum = kor + eng + math;
-		double avg = (double)sum / 3;
+		//System.out.println("총점 : " + (kor + eng + math));
+		//System.out.println("평균 : " + (kor + eng + math) / 3);
 		
-		System.out.println("총점 : " + sum);
-		System.out.printf("평균 : %.2f", avg);
+		int total = kor + eng + math;
+		//double average = total / 3; // 266 / 3 => 88 => /*(double)*/88 => 88.0
+		double average = (double)total / 3; // 266.0 / 3 => 266.0 / 3.0 => 88.666666666667
+		
+		System.out.println("총점 : " + total);
+		System.out.printf("평균 : %.2f", average);
+		
+		
 		
 	}
 	
