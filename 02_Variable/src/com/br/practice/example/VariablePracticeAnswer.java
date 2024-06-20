@@ -94,9 +94,6 @@ public class VariablePracticeAnswer {
 	
 	
 	
-	
-	
-	
 	// 추가 문제 -----------------------------------------------------------------------
 	public void method5() {
 		
@@ -110,7 +107,12 @@ public class VariablePracticeAnswer {
 		 * A 숫자값 : 65 (결과 출력)
 		 */
 		
+		Scanner sc = new Scanner(System.in);
 		
+		System.out.print("문자 : ");
+		char ch = sc.nextLine().charAt(0);
+		
+		System.out.println(ch + " 숫자값 : " + (int)ch);
 		
 	}
 	
@@ -127,7 +129,22 @@ public class VariablePracticeAnswer {
 		 * 총점 : 266  	  (결과 출력)
 		 * 평균 : 88.67   (결과 출력, 반드시 소수점아래 둘째짜리까지 출력되도록)
 		 */
+		Scanner sc = new Scanner(System.in);
 		
+		System.out.print("국어 : ");
+		int kor = sc.nextInt();
+		
+		System.out.print("영어 : ");
+		int eng = sc.nextInt();
+		
+		System.out.print("수학 : ");
+		int math = sc.nextInt();
+		
+		int sum = kor + eng + math;
+		double avg = (double)sum / 3;
+		
+		System.out.println("총점 : " + sum);
+		System.out.printf("평균 : %.2f", avg);
 		
 	}
 	
@@ -148,23 +165,23 @@ public class VariablePracticeAnswer {
         
         char ch = 'A';
         
-        System.out.println( iNum1 iNum2 ); // 2
-        System.out.println( dNum ); // 2
+        System.out.println( iNum1 / iNum2 ); // 2
+        System.out.println( (int)dNum ); // 2
         
-        System.out.println( iNum2 dNum ); // 10.0
-        System.out.println( iNum1 ); // 10.0
+        System.out.println( iNum2 * dNum ); // 10.0
+        System.out.println( (double)iNum1 ); // 10.0
         
-        System.out.println( iNum1 iNum2 ); // 2.5
+        System.out.println( iNum1 / (double)iNum2 ); // 2.5
         
-        System.out.println( fNum ); // 3
-        System.out.println( iNum1  fNum ); // 3
+        System.out.println( (int)fNum ); // 3
+        System.out.println( (int)(iNum1 / fNum) ); // 3
 
-        System.out.println( iNum1 fNum );// 3.3333333
-        System.out.println( iNum1 fNum ); // 3.333333333333335
+        System.out.println( iNum1 / fNum );// 3.3333333
+        System.out.println( (double)iNum1 / fNum ); // 3.333333333333335
         
-        System.out.println( ch ); // 65
-        System.out.println( ch  iNum1 ); // 75
-        System.out.println( ch  iNum1 ); // 'K'
+        System.out.println( (int)ch ); // 65
+        System.out.println( ch + iNum1 ); // 75
+        System.out.println( (char)(ch + iNum1) ); // 'K'
 
 	}
 }
