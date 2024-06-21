@@ -205,17 +205,6 @@ public class OperatorPracticeAnswer {
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	// 추가문제  -------------------------------------------------------------
 	public void practice9() {
 		/*
@@ -232,6 +221,18 @@ public class OperatorPracticeAnswer {
 		 * true		(결과출력)
 		 */
 		
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("정수1 : ");
+		int num1 = sc.nextInt();
+
+		System.out.print("정수2 : ");
+		int num2 = sc.nextInt();
+
+		System.out.print("입력 : ");
+		int input = sc.nextInt();
+		
+		System.out.println(input <= num1 || input > num2);
 		
 	}
 	
@@ -248,6 +249,19 @@ public class OperatorPracticeAnswer {
 		 * false	(결과출력)
 		 */
 		
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("입력1 : ");
+		int num1 = sc.nextInt();
+
+		System.out.print("입력2 : ");
+		int num2 = sc.nextInt();
+
+		System.out.print("입력3 : ");
+		int num3 = sc.nextInt();
+
+		boolean isTrue = (num1 == num2) && (num2 == num3);
+		System.out.println(isTrue);
 		
 	}
 	
@@ -257,13 +271,20 @@ public class OperatorPracticeAnswer {
 		 * 사용자에게 점수값을 정수로 입력받아 
 		 * 해당 점수가 90점대일 경우 "축하합니다." 
 		 * 			  그게 아닐 경우 "분발하세요." 출력
-		 * 
-		 * ex) 
-		 * 점수 : 95 	(=> 사용자가 입력한값)
-		 * 
-		 * 축하합니다.	(결과출력)
 		 */
 		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("점수 : ");
+		int score = sc.nextInt();
+		
+		// 1. 점수가 90점 이상, 100 미만인지 비교
+		//String result = score >= 90 && score < 100 ? "축하합니다." : "분발하세요.";
+		
+		// 2. 점수값을 10으로 나누었을때 몫이 9인지 비교 ==> 이것도 90점대에 해당됨!!
+		String result = score / 10 == 9 ? "축하합니다." : "분발하세요.";
+		
+		System.out.println(result);
 	}
 	
 	
@@ -287,9 +308,29 @@ public class OperatorPracticeAnswer {
 		 * C 사원의 인센티브 포함 연봉이 2990.0만원 이며 3000만원 미만입니다.  (결과출력)
 		 */
 		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("A 사원의 연봉 : ");
+		int a = sc.nextInt();
+		System.out.print("B 사원의 연봉 : ");
+		int b = sc.nextInt();
+		System.out.print("C 사원의 연봉 : ");
+		int c = sc.nextInt();
+
+		// 인센티브 포함 연봉 구하기
+		double aIncen = a * 1.4; // a + a * 0.4 --> a * (1 + 0.4) --> a * 1.4
+		double bIncen = b;
+		double cIncen = c * 1.15; 
+		
+		// 출력결과값을 String형 변수에 담아두기
+		String result1 = "3000만원 이상";
+		String result2 = "3000만원 미만";
+		
+		System.out.printf("A 사원의 인센티브 포함 연봉이 %.1f만원 이며 %s입니다.\n", aIncen, aIncen >= 3000 ? result1 : result2);
+		System.out.printf("B 사원의 인센티브 포함 연봉이 %.1f만원 이며 %s입니다.\n", bIncen, bIncen >= 3000 ? result1 : result2);
+		System.out.printf("C 사원의 인센티브 포함 연봉이 %.1f만원 이며 %s입니다.\n", cIncen, cIncen >= 3000 ? result1 : result2);
+		
 		
 	}
-	
 	
 	
 
