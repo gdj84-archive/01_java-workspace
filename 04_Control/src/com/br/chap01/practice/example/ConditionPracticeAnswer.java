@@ -328,29 +328,34 @@ public class ConditionPracticeAnswer {
 		
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("실행할 기능을 선택하세요.");
-		System.out.println("1. 메뉴 출력");
-		System.out.println("2. 짝수/홀수");
-		System.out.println("3. 합격/불합격");
-		System.out.println("4. 계절");
-		System.out.println("5. 로그인");
-		System.out.println("6. 권한 확인");
-		System.out.println("7. BMI");
-		System.out.println("8. 계산기");
-
-		System.out.print("선택 : ");
-		int menu = sc.nextInt();
+		while(true) {
+			System.out.println("\n실행할 기능을 선택하세요.");
+			System.out.println("1. 메뉴 출력");
+			System.out.println("2. 짝수/홀수");
+			System.out.println("3. 합격/불합격");
+			System.out.println("4. 계절");
+			System.out.println("5. 로그인");
+			System.out.println("6. 권한 확인");
+			System.out.println("7. BMI");
+			System.out.println("8. 계산기");
+			System.out.println("0. 프로그램 종료");
+	
+			System.out.print("선택 : ");
+			int menu = sc.nextInt();
+			
+			switch(menu) {
+			case 1: practice1(); break;
+			case 2: practice2(); break;
+			case 3: practice3(); break;
+			case 4: practice4(); break;
+			case 5: practice5(); break;
+			case 6: practice6(); break;
+			case 7: practice7(); break;
+			case 8: practice8(); break;
+			case 0: System.out.println("프로그램을 종료합니다."); return;
+			default: System.out.println("잘못 입력하셨습니다.");
+			}
 		
-		switch(menu) {
-		case 1: practice1(); break;
-		case 2: practice2(); break;
-		case 3: practice3(); break;
-		case 4: practice4(); break;
-		case 5: practice5(); break;
-		case 6: practice6(); break;
-		case 7: practice7(); break;
-		case 8: practice8(); break;
-		default: System.out.println("잘못 입력하셨습니다.");
 		}
 		
 		
