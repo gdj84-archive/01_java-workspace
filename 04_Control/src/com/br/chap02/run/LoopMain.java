@@ -38,9 +38,9 @@ public class LoopMain {
 //		b.method3();
 		
 		Continue c = new Continue();
-		c.method1();
-		
-		
+//		c.method1();
+//		c.method2();
+		c.method3();
 	}
 
 }

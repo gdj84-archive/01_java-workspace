@@ -33,5 +33,56 @@ public class Continue {
 		}
 		
 	}
+	
+	public void method2() {
+		// 1부터 100까지의 총 합계
+		// 단, 6의 배수값은 빼고 덧셈연산
+		int sum = 0;
+		for(int i=1; i<=100; i++) {
+			
+			if(i % 6 == 0) {
+				continue;
+			}
+			
+			sum += i;
+		}
+		
+		System.out.println("결과 : " + sum);
+	}
+	
+	public void method3() {
+		/*
+		 * 2단 ~ 9단까지 출력
+		 * 단, 3의 배수단은 제외하고 출력
+		 * 
+		 * 2단
+		 * 4단
+		 * 5단
+		 * 7단
+		 * 8단
+		 */
+		
+		for(int dan=2; dan<=9; dan++) {
+			
+			if(dan % 3 == 0) {
+				continue;
+			}
+			
+			System.out.println("=== " + dan + "단 ===");
+			for(int su=1; su<=9; su++) {
+				System.out.printf("%d x %d = %d\n", dan, su, dan*su);
+			}
+			System.out.println();
+			
+		}
+		
+		
+	}
+	
+	
+	
+	
+	
+	
 
 }
