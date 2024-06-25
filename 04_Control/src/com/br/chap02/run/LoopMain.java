@@ -1,6 +1,7 @@
 package com.br.chap02.run;
 
 import com.br.chap02.loop.Break;
+import com.br.chap02.loop.Continue;
 import com.br.chap02.loop.For;
 import com.br.chap02.loop.While;
 
@@ -24,6 +25,7 @@ public class LoopMain {
 //		f.method14();
 //		f.method15();
 //		f.method16();
+//		f.remind();
 		
 		While w = new While();
 //		w.method1();
@@ -33,7 +35,12 @@ public class LoopMain {
 		Break b = new Break();
 //		b.method1();
 //		b.method2();
-		b.method3();
+//		b.method3();
+		
+		Continue c = new Continue();
+		c.method1();
+		
+		
 	}
 
 }
