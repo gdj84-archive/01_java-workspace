@@ -253,7 +253,18 @@ public class ArrayPracticeAnswer {
 				
 				// => 배열에 담긴 값 출력
 				for(int i=0; i<arr.length; i++) {
-					System.out.print(arr[i] + " ");
+					/*
+					if(i < arr.length - 1) {
+						System.out.print(arr[i] + ", ");
+					}else {
+						System.out.print(arr[i]);
+					}
+					*/
+					System.out.print(arr[i]);
+					if(i < arr.length - 1) {
+						System.out.print(", ");
+					}
+					
 				}
 				
 				// => 반복문 종료
@@ -271,7 +282,35 @@ public class ArrayPracticeAnswer {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		// 1. 치킨 메뉴들이 들어있는 String배열 선언과 동시에 초기화
+		String[] chickens = {"후라이드", "양념", "파닭", "스노윙"};
 		
+		// 2. 사용자에게 치킨명 입력받기
+		System.out.print("치킨 이름을 입력하세요 : ");
+		String menu = sc.nextLine();
+		
+		// 3. 사용자가 입력한 메뉴가 해당 배열에 존재하는지 판별해서 그에 맞는 결과 출력
+		boolean result = false; 
+		for(int i=0; i<chickens.length; i++) { // 배열에 있는지 없는지를 판별하기 위한 for
+			if(chickens[i].equals(menu)) {
+				result = true;
+				break;
+			}
+		}
+		
+		// result = false(배열에 없음) | true(배열에 있음);
+		
+		// 판별이 다 끝난 후에 출력은 단 한번만 수행되도록
+		/*
+		if(result) { // 배달가능
+			System.out.println(menu + "치킨 배달 가능");
+		}else { // 없는메뉴입니다
+			System.out.println(menu + "치킨은 없는 메뉴입니다.");
+		}
+		*/
+		
+		System.out.println(menu + (result ? "치킨 배달 가능" 
+										  : "치킨은 없는 메뉴입니다."));		
 		
 	}
 	
