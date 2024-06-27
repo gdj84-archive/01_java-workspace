@@ -19,13 +19,14 @@ public class ArrayMain {
 //		a.method10();
 //		a.method11();
 //		a.method12();
+		a.advancedFor();
 		
 		ArrayCopy ac = new ArrayCopy();
 //		ac.method1();
 //		ac.method2();
 //		ac.method3();
 //		ac.method4();
-		ac.method5();
+//		ac.method5();
 	}
 
 }
