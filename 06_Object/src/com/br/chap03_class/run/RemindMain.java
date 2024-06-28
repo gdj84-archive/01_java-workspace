@@ -30,10 +30,13 @@ public class RemindMain {
 		System.out.print("칼로리 : ");
 		int kcal = sc.nextInt();
 		
+		/*
 		Snack s = new Snack();
 		s.setsName(name);
 		s.setPrice(price);
 		s.setKcal(kcal);
+		*/
+		Snack s = new Snack(name, price, kcal);
 		
 		System.out.println(s.information());
 		

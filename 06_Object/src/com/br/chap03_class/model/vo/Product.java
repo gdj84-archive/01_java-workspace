@@ -6,6 +6,17 @@ public class Product {
 	private int price;
 	private String brand;
 	
+	// 기본생성자 
+	public Product() {}
+	
+	// 매개변수 3개짜리 생성자 (모든 멤버변수에 값 초기화)
+	public Product(String pName, int price, String brand) {
+		this.pName = pName;
+		this.price = price;
+		this.brand = brand;
+	}
+	
+	
 	/*
 	public void setPName(String pName) {
 		this.pName = pName;

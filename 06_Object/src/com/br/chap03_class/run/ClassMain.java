@@ -40,19 +40,25 @@ public class ClassMain {
 		
 		System.out.println("=============");
 
+		
+		// 내가 원하는 데이터가 담긴 객체를 생성하기 위한 방법
+		// 방법1. 기본생성자로 생성 후 setter메소드를 이용해서 값 대입
 		Product p = new Product();
 		
 		p.setpName("갤럭시");
 		p.setPrice(1200000);
 		p.setBrand("삼성");
 		
-		/*
-		System.out.println(p.getpName());
-		System.out.println(p.getPrice());
-		System.out.println(p.getBrand());
-		*/
-		
 		System.out.println(p.information());
+		
+		// 방법2. 매개변수 생성자를 정의해두고 실행시켜 생성과 동시에 값 대입
+		Product p2 = new Product("아이폰", 1000000, "애플");
+		System.out.println(p2.information());
+		
+		// 두번째 상품이 10프로 할인한다고 한다.
+		// 두번째 상품의 정상가격과, 할인가격을 출력
+		System.out.println("두번째 상품의 정상가 : " + p2.getPrice() + "원");
+		System.out.println("두번째 상품의 할인가 : " + (int)(p2.getPrice() * 0.9) + "원");
 		
 		
 		/*

@@ -21,6 +21,26 @@ public class Student {
 	/*
 	 * 2. 생성자
 	 */
+	// 기본생성자
+	public Student() {}
+	
+	// 이름, 나이, 키 대입해주는 매개변수생성자
+	public Student(String name, int age, double height) {
+		this.name = name;
+		this.age = age;
+		this.height = height;
+	}
+	
+	// 이름, 나이, 키, 국어, 수학 대입해주는 매개변수생성자
+	public Student(String name, int age, double height
+							, int korScore, int mathScore) {
+		
+		this(name, age, height);
+		this.korScore = korScore;
+		this.mathScore = mathScore;
+	}
+	
+	
 	
 	/*
 	 * 3. 메소드 | 멤버메소드

@@ -9,6 +9,18 @@ public class Snack {
 	
 	public static final String BRAND = "농심";
 	
+	// 기본생성자
+	public Snack() {}
+	
+	// 과자명, 가격, 칼로리 전달받아서 
+	// 객체 생성과 동시에 초기화하는 매개변수생성자
+	public Snack(String sName, int price, int kcal) {
+		this.sName = sName;
+		this.price = price;
+		this.kcal = kcal;
+	}
+	
+	
 	/*
 	public void setBrand(String brand) {
 		this.brand = brand;
