@@ -55,6 +55,32 @@ public class ClassMain {
 		System.out.println(p.information());
 		
 		
+		/*
+		 *  com.br.chap03_class.model.vo에 
+		 *  하단의 클래스 다이어그램을 
+		 *  참고해서 작성해보시오.
+		 *  
+	     * ┌-----------------┐
+	     * │      Snack      │
+	     * │-----------------│
+	     * │- sName : String │
+	     * │- brand : String │
+	     * │- price : int    │
+	     * │- kcal  : int    │ 
+	     * │-----------------│
+	     * │+ setter : void  │
+	     * │+ getter : 자료형│
+	     * └-----------------┘
+	     *     
+	     */
+		
+		
+		
+		
+		
+		
+		
+		
 
 	}
 
