@@ -21,6 +21,11 @@ public class Cosmetic {
 	 *  ㄴstatic final : 상수필드 (공유도 하는데 변경은 불가하도록)
 	 */
 	
+	private String cName;
+	private int price;
+	private String brand;
+	private String category;
+	
 	
 	/*
 	 * < 생성자 >
@@ -44,9 +49,14 @@ public class Cosmetic {
 	 * 	  단, 해당 구문은 첫문장으로 작성
 	 * 
 	 */
+	public Cosmetic() {}
 	
-	
-	
+	public Cosmetic(String cName, int price, String brand, String category) {
+		this.cName = cName;
+		this.price = price;
+		this.brand = brand;
+		this.category = category;
+	}
 	
 	/*
 	 * < 메소드 >
@@ -64,6 +74,46 @@ public class Cosmetic {
 	 *   단, 멤버변수와 밀접하게 연관되어있는 코드를 작성
 	 * 
 	 */
+	public String getcName() {
+		return cName;
+	}
+	
+	public void setcName(String cName) {
+		this.cName = cName;
+	}
+	
+	public int getPrice() {
+		return price;
+	}
+	
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	
+	public String getBrand() {
+		return brand;
+	}
+	
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+	
+	public String getCategory() {
+		return category;
+	}
+	
+	public void setCategory(String category) {
+		this.category = category;
+	}
+	
+	public String information() {
+		
+		String str = "화장품명: " + cName + "\n가격: " + price + "원"
+				 + "\n브랜드명: " + brand + "\n종류: " + category;
+		
+		return str;
+	}
+	
 	
 	
 	
