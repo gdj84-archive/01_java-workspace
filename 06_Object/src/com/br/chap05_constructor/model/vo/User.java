@@ -10,6 +10,15 @@ public class User {
 	private int age;
 	private char gender;
 	
+	/*
+	 * < Has-a 관계(포함관계) >
+	 * 멤버변수로 다른 클래스 타입의 변수를 선언해두는 것
+	 * 즉, 다른 클래스 타입의 객체를 포함할 수 있다. 
+	 * 
+	 * User가 Cosmetic 한개를 가질 수 있도록 멤버변수로 설정
+	 */
+	private Cosmetic cos;
+	
 	// 생성자부
 	/*
 	 * < 생성자 >
@@ -106,11 +115,30 @@ public class User {
 	public void setGender(char gender) {
 		this.gender = gender;
 	}
+	public Cosmetic getCos() {
+		return cos;
+	}
+	public void setCos(Cosmetic cos) {
+		this.cos = cos;
+	}
+	
+	
 	
 	public String information() {
-		return "userId: " + userId + ", userPwd: " + userPwd
-			+ ", userName: " + userName + ", age: " + age
-			+ ", gender: " + gender;
+		
+		String str = "userId: " + userId + ", userPwd: " + userPwd
+				+ ", userName: " + userName + ", age: " + age
+				+ ", gender: " + gender + "\n<화장품정보>\n";
+		
+		// NullPointerException 방지를 목적
+		if(cos != null) { // cos 멤버변수가 null이 아닐경우 (즉, 화장품객체가 존재할 경우) 
+			str += cos.information();
+		}else {
+			str += "화장품없음";
+		}
+		
+		return str; 
+		
 	}
 
 }
