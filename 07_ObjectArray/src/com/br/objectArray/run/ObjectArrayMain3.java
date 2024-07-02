@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import com.br.objectArray.model.vo.Phone;
 
-public class ObjectArrayRun3 {
+public class ObjectArrayMain3 {
 
 	public static void main(String[] args) {
 		
