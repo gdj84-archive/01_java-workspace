@@ -71,4 +71,39 @@ public class Book /*extends Object*/ {
     }
 	
 	
+	@Override
+	public boolean equals(Object obj) {
+        // 재정의 : this객체와 obj객체의 모든 필드값들이 다일치할경우 true/ 그게아니면 false 반환
+		
+		/*
+		 * bk3.equals(bk4) 실행될 경우
+		 * 
+		 * this      obj
+		 *  bk3		 bk4
+		 * Book     Object 
+		 * 
+		 * this.title vs obj.title
+		 * this.author vs obj.author
+		 * this.price vs obj.price
+		 */
+		Book other = (Book)obj;
+		
+		if(title.equals(other.title) 
+				&& author.equals(other.author) 
+					&& price == other.price) {
+			return true;
+		}else {
+			return false;
+		}
+		
+    }
+	
+	@Override
+	public int hashCode() {
+		// 재정의 : 현재객체의 멤버변수값들을 가지고 10진수 숫자 반환
+		return (title + author + price).hashCode();
+		// 같은 문자열일 경우 해당 문자열의 hashCode는 같도록 String에서 이미정의되어있음
+	}
+	
+	
 }
