@@ -21,7 +21,7 @@ public class Desktop extends Product {
 		// brand~price 네개의 값들은 부모클래스(Product)의 필드에 대입
 		// 자식클래스에서 부모클래스꺼에 접근할때 super. 으로 접근 가능 (단, private은 접근불가능)
 		
-		// 해결방법1. 부모클래스의 필드를 protected 로 수정
+		// 해결방법1. 부모클래스의 필드를 protected(#) 로 수정
 		/*
 		super.brand = brand;
 		super.pCode = pCode;

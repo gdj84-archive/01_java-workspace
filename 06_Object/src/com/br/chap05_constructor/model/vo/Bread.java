@@ -1,11 +1,13 @@
 package com.br.chap05_constructor.model.vo;
 
-public class Bread {
+public class Bread /*extends Object*/ {
 	
 	private String name;
 	private int price;
 	
-	public Bread() {}
+	public Bread() {
+		//super();
+	}
 	
 	public Bread(String name, int price) {
 		this.name = name;
