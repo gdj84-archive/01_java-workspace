@@ -33,6 +33,12 @@ public abstract class GameCharacter {
 
 	public void setHp(int hp) {
 		this.hp = hp;
+		
+		if(this.hp <= 0) {
+			this.level--;
+			this.hp = 100;
+			System.out.println("모든 체력이 다 소모되어 레벨이 감소하였습니다. 체력은 다시 100으로 되었습니다.");
+		}
 	}
 
 	public int getLevel() {
@@ -49,6 +55,12 @@ public abstract class GameCharacter {
 
 	public void setExp(int exp) {
 		this.exp = exp;
+		
+		if(this.exp >= 100) {
+			this.level++;
+			this.exp -= 100;
+			System.out.println("레벨업 되셨습니다. 축하합니다.");
+		}
 	}
 
 	// alt+shift+s > s > enter
