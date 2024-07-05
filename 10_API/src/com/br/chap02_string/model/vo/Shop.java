@@ -2,7 +2,7 @@ package com.br.chap02_string.model.vo;
 
 public class Shop {
 	
-	private int num;			// 맛집번호(식별번호)
+	private String num;			// 맛집번호(식별번호)
 	private String shopName;	// 맛집명
 	private String shopAddr;	// 맛집주소
 	private String phoneNum;	// 맛집전화번호
@@ -11,7 +11,7 @@ public class Shop {
 	
 	public Shop() {}
 
-	public Shop(int num, String shopName, String shopAddr, String phoneNum, String category, String registDt) {
+	public Shop(String num, String shopName, String shopAddr, String phoneNum, String category, String registDt) {
 		super();
 		this.num = num;
 		this.shopName = shopName;
@@ -21,11 +21,11 @@ public class Shop {
 		this.registDt = registDt;
 	}
 
-	public int getNum() {
+	public String getNum() {
 		return num;
 	}
 
-	public void setNum(int num) {
+	public void setNum(String num) {
 		this.num = num;
 	}
 
