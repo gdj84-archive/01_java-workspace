@@ -1,5 +1,7 @@
 package com.br.chap02_string;
 
+import com.br.chap02_string.model.vo.Shop;
+
 public class Homework {
 
 	// split 연습 
@@ -21,7 +23,20 @@ public class Homework {
 		// 모든 맛집에 대한 정보를 Shop[] 로 담아내기
 		// Hint. 먼저 \n 분리하고 => 반복문으로 접근하면서 다시 ,로 분리해야됨
 		
+		String[] shops = shopCsv.split("\n"); // {"1,맘스쿡,광주광역시 동구 동계천로143,062-233-1233,향토맛집,2022-01-11", "2,옛날밥상,\"광주광역시 남구 용대로119번길 6(봉선동, 1층)\",062-653-7337,향토맛집,2022-01-11" ..}
 		
+		Shop[] shopArr = new Shop[shops.length];
+		
+		for(int i=0; i<shops.length; i++) { // shops[i] == "맛집정보,로 연결"
+			
+			String[] arr = shops[i].split(","); // {"1", "맘스쿡", "광주광역시~~~", "062~~", ...}
+			shopArr[i] = new Shop(arr[0], arr[1], arr[2], arr[3], arr[4], arr[5]);
+			
+		}
+		
+		for(Shop s : shopArr) {
+			System.out.println(s);
+		}
 		
 	}
 
