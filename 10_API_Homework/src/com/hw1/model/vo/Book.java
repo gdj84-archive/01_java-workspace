@@ -1,7 +1,7 @@
 package com.hw1.model.vo;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 
 /**
  * @author Boram
@@ -69,13 +69,16 @@ public class Book {
 
 	@Override
 	public String toString() {
-		
-		// 출판일(Calendar publishDate) 형식을  "0000년 00월 00일" 형태의 문자열 형식으로 만들어 하단의 주석에 반영시키시오
-		
-		// 코드 작성
+		/*
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일");
+		String result = sdf.format(publishDate.getTimeInMillis()); // "2022년 12월 01일"
 		
 		return "Book [title=" + title + ", author=" + author + ", publisher=" + publisher + ", publishDate="
-				+ /* 반영 */ + ", price=" + price + "]";
+				+ result + ", price=" + price + "]";
+		*/
+		
+		return "Book [title=" + title + ", author=" + author + ", publisher=" + publisher + ", publishDate="
+				+ new SimpleDateFormat("yyyy년 MM월 dd일").format(publishDate.getTimeInMillis()) + ", price=" + price + "]";
 	}
 
 }

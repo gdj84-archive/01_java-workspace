@@ -37,12 +37,15 @@ public class Run {
 		// 2_2. 입력받은 값들을 BookController의 insertBook() 메소드로 전달
 		bc.insertBook(newTitle, newAuthor, newPublisher, newDate, newPrice);
 		
-
+		
+		
 		// 3. 5번째 도서 출간일 출력
 		System.out.println("---------3. 5번째 도서 출간일 출력---------");
 		bc.printBookPublishDate();
 		
 		System.out.println();
+		
+		
 		
 		// 4_1. 검색할 도서명 입력 (키워드)
 		System.out.print("검색할 도서명을 입력하시오 : ");
@@ -50,6 +53,7 @@ public class Run {
 		
 		// 4_2. 입력받은 검색명을 BookController의 searchBook() 메소드로 전달
 		bc.searchBook(searchTitle);
+		
 		
 		
 	}
