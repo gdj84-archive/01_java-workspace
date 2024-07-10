@@ -81,9 +81,32 @@ public class AssistBufferedDao {
 		try(BufferedReader br = new BufferedReader(new FileReader("buffer.txt"))){
 			
 			// readLine메소드를 통해서 한 줄단위로 읽어들일 수 있음
+			/*
 			System.out.println(br.readLine());
 			System.out.println(br.readLine());
 			System.out.println(br.readLine());
+			
+			System.out.println(br.readLine()); // 파일의 끝을 만나는 순간 null반환 
+			System.out.println(br.readLine());
+			*/
+			
+			/*
+			String value = null;
+			while((value = br.readLine()) != null) {
+				System.out.println(value);
+			}
+			*/
+			
+			// 최종 결과물로 하나의 String 변수에 담도록
+			String value = null;
+			StringBuilder sb = new StringBuilder();
+			while((value = br.readLine()) != null) {
+				sb.append(value);
+				sb.append("\n");
+			}
+			
+			String result = sb.toString();
+			System.out.println(result);
 			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
