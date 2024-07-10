@@ -114,7 +114,7 @@ public class FileByteDao {
 			while((value = fin.read()) != -1) {
 				System.out.print((char)value);
 			}
-			
+	
 			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
