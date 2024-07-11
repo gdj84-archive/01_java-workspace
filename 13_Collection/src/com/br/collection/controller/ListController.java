@@ -135,7 +135,7 @@ public class ListController {
 		List<Music> list = new ArrayList<>();
 		System.out.println("초기 list: " + list);
 		
-		// * add(E e) : 리스트 공간 끝에 전달된 요소를 추가시켜줌
+		// ** add(E e) : 리스트 공간 끝에 전달된 요소를 추가시켜줌
 		list.add(new Music("Good Bye", "박효신"));
 		list.add(new Music("이 밤", "양다일"));
 		list.add(new Music("잊혀지다", "정키"));
@@ -147,10 +147,61 @@ public class ListController {
 		
 		System.out.println("추가후 list: " + list);
 		
-		// * remove(int index) : 리스트 내에 특정 인덱스 위치의 요소를 제거시켜줌
+		// ** remove(int index) : 리스트 내에 특정 인덱스 위치의 요소를 제거시켜줌
 		list.remove(1);
 		
+		System.out.println("제거후 list: " + list);
 		
+		// ** set(int index, E e) : 리스트 내에 특정 인덱스 위치의 요소를 새로이 전달한 요소로 변경해줌
+		list.set(0, new Music("술이 달다", "에픽하이"));
+		
+		System.out.println("변경후 list: " + list);
+		
+		// ** size() : 리스트내의 요소 갯수 반환 (즉, 리스트의 사이즈)
+		System.out.println("list의 사이즈: " + list.size());
+		System.out.println("list의 마지막인덱스수: " + (list.size()-1));
+		
+		// ** get(int index) : 리스트 내의 특정 인덱스 위치의 요소를 E 타입으로 반환 
+		System.out.println("0번인덱스 Music객체: " + list.get(0));
+		
+		Music m = list.get(1);
+		System.out.println("1번인덱스 Music객체: " + m);
+		System.out.println("제목만: " + m.getTitle());
+		System.out.println("가수만: " + m.getArtist());
+		
+		System.out.println("2번인덱스 Music객체의 제목만: " + list.get(2).getTitle());
+		System.out.println("2번인덱스 Music객체의 가수만: " + list.get(2).getArtist());
+		
+		// 특정 인덱스의 Music객체 내의 정보 변경
+		// ex) 1번 인덱스 Music 객체의 제목을 "저 밤"으로 수정 
+		list.get(1).setTitle("저 밤");
+		System.out.println("수정후 1번인덱스 Music객체: " + list.get(1));
+		
+		// list 내의 전체 요소(Music객체들) 출력
+		System.out.println("========= for loop문 =========");
+		for(int i=0; i<list.size(); i++) {
+			System.out.println(list.get(i));
+		}
+		System.out.println("========= for each문 =========");
+		for(Music mu : list) {
+			System.out.println(mu);
+		}
+		System.out.println("==============================");
+		
+		// * subList(int fromIndex, int toIndex) : 리스트의 fromIndex부터 toIndex "이전"까지를 새로운 List 담아서 반환
+		List<Music> sub = list.subList(0, 2);
+		System.out.println("추출한 list: " + sub);
+		
+		// * addAll(Collection c) : 기존 리스트에 전달된 컬렉션의 전체 데이터들을 통채로 추가시켜줌
+		list.addAll(sub);
+		System.out.println("추가후 list: " + list);
+		
+		// * clear() : 리스트 내의 요소들을 다 제거시켜줌 (초기화)
+		list.clear();
+		System.out.println("초기화후 list: " + list);
+		
+		// ** isEmpty() : 리스트가 비어있을 경우 true 반환 
+		System.out.println("비어있나요?: " + list.isEmpty());
 		
 	}
 	
