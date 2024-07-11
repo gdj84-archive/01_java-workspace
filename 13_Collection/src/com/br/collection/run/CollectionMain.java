@@ -31,7 +31,7 @@ public class CollectionMain {
 	 *    ㄴ 데이터(value)만 저장 가능
 	 *    ㄴ 순서 유지됨 (index로써 관리됨)
 	 *    ㄴ 중복 데이터 허용됨 
-	 *    ㄴ 하위 클래스 : Vector, "ArrayList", LinkedList, ..t
+	 *    ㄴ 하위 클래스 : Vector, "ArrayList", LinkedList, ..
 	 *    
 	 * 2. Set : 집합 형태의 컬렉션
 	 * 	  ㄴ 데이터(value)만 저장 가능 
@@ -52,7 +52,10 @@ public class CollectionMain {
 		ListController lc = new ListController();
 		//lc.arrayListTest1();
 		//lc.arrayListTest2();
-		lc.arrayListTest3();
+		//lc.arrayListTest3();
+		//lc.arrayListTest4();
+		lc.arrayListTest5();
+		
 		
 	}
 

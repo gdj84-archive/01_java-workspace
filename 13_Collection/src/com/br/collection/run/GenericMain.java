@@ -22,7 +22,7 @@ public class GenericMain {
 		System.out.println(strsContainer);
 		
 		// 타입을 지정하지 않는다면? => Object 로 자동 지정
-		Container whatContainer = new Container();
+		Container whatContainer = new Container(); // Container<Object>
 		whatContainer.setItem("안녕");
 		whatContainer.setItem(10);
 		System.out.println(whatContainer);
