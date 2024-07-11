@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import com.br.collection.model.vo.Music;
+
 public class ListController {
 	
 	/*
@@ -127,6 +129,28 @@ public class ListController {
 	}
 	
 	public void arrayListTest6() {
+		
+		// Music 객체들만 저장되는 list 생성
+		
+		List<Music> list = new ArrayList<>();
+		System.out.println("초기 list: " + list);
+		
+		// * add(E e) : 리스트 공간 끝에 전달된 요소를 추가시켜줌
+		list.add(new Music("Good Bye", "박효신"));
+		list.add(new Music("이 밤", "양다일"));
+		list.add(new Music("잊혀지다", "정키"));
+		
+		System.out.println("추가후 list: " + list);
+		
+		// * add(int index, E e) : 리스트 내에 특정 인덱스 위치에 전달된 요소를 추가시켜줌
+		list.add(1, new Music("진심이 담긴 노래", "케이시"));
+		
+		System.out.println("추가후 list: " + list);
+		
+		// * remove(int index) : 리스트 내에 특정 인덱스 위치의 요소를 제거시켜줌
+		list.remove(1);
+		
+		
 		
 	}
 	
