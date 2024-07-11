@@ -55,8 +55,8 @@ public class CollectionMain {
 		//lc.arrayListTest3();
 		//lc.arrayListTest4();
 		//lc.arrayListTest5();
-		lc.arrayListTest6();
-		
+		//lc.arrayListTest6();
+		lc.arrayListTest7();
 	}
 
 }

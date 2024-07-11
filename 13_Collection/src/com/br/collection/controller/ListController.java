@@ -205,7 +205,30 @@ public class ListController {
 		
 	}
 	
-	
+	public void arrayListTest7() {
+		
+		// 타입 미지정시 E == Object 결정
+		List list = Arrays.asList(new Music("술이 달다", "에픽하이")
+								, new Music("이 밤", "양다일")
+								, "끝");
+		
+		System.out.println(list);
+		
+		String str = (String)list.get(2);
+		Music m1 = (Music)list.get(0); // 객체를 꺼내 특정 변수에 담을때 매번 형변환 해야됨
+		System.out.println(m1);
+		
+		// 1번 인덱스 Music객체 정보 변경
+		((Music)list.get(1)).setTitle("저 밤");
+		((Music)list.get(1)).setArtist("다일"); // 객체에 접근해서 setter수행시에도 매번 형변환 해야됨
+		
+		/*
+		 * < 컬렉션 사용시 타입을 지정해두는걸 권장 >
+		 * 1. 명시된 타입의 객체만 저장가능하도록 제한을 둘 수 있어 데이터의 안정성 확보
+		 * 2. 컬렉션에 저장된 객체에 접근시 매번 형변환하는 절차를 없앨 수 있음 
+		 */
+		
+	}
 	
 	
 	
