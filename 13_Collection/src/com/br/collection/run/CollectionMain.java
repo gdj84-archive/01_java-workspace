@@ -70,8 +70,10 @@ public class CollectionMain {
 		MapController mc = new MapController();
 		//mc.hashMapTest1();
 		//mc.hashMapTest2();
-		mc.hashMapTest3();
-		
+		//mc.hashMapTest3();
+		//mc.propertiesTest1();
+		//mc.propertiesTest2();
+		mc.propertiesTest3();
 	}
 
 }

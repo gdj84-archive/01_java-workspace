@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>propertiesTest</comment>
+	
+	<entry key="Set">
+		HashSet
+	</entry>
+	
+	<entry key="List">
+		ArrayList
+	</entry>
+	
+	<entry key="Map">
+		Properties
+	</entry>
+	
+	<entry key="Academy">
+		Goo
+		dee
+	</entry>
+	
+	<entry key="selectMember">
+		select
+			   member_id
+			 , member_pwd
+			 , member_name
+		  from member
+	</entry>
+	
+	
+</properties>
